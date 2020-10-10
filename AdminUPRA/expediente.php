@@ -255,85 +255,85 @@ require 'inc/connection.php';
                             </div>
                             <div class='modal-body'>
                               <form action='edtiest.php' method='post'>
-          <div class='input-group mb-3'>
-          <input type='text'' name='item_id' class='form-control' placeholder='CURSO'>
-          <div class='input-group-append'>
-            <div class='input-group-text'>
-              <span class='fas fa-chalkboard-teacher'></span>
-            </div>
-          </div>
-              
-        </div>
-         <div class='input-group mb-3'>
-          <input type='text' name='item_id' class='form-control' placeholder='CAMBIAR NOMBRE AL CURSO'>
-          <div class='input-group-append'>
-            <div class='input-group-text'>
-              <span class='fas fa-chalkboard-teacher'></span>
-            </div>
-          </div>
-        </div>
-          
-          <div class='input-group mb-3'>
-            <label>Description: &nbsp; </label>
-              <textarea rows='4' cols='50' name='description' class='form-control' placeholder='DESCRIPCION' required>
-              </textarea>
-          <div class='input-group-append'>
-            <div class='input-group-text'>
-              <span class='fa fa-font'></span>
-            </div>
-          </div>
-        </div>
-          
-          
-          <div class='input-group mb-3'>
-          <input type='text' name='item_id' class='form-control' placeholder='NOTA'>
-          <div class='input-group-append'>
-            <div class='input-group-text'>
-              <span class='fas fa-clipboard'></span>
-            </div>
-          </div>
-        </div>
-          <div class='input-group mb-3'>
-          <input type='text' name='name' class='form-control' placeholder='MATRICULADO'>
-          <div class='input-group-append'>
-            <div class='input-group-text'>
-              <span class='fas fa-user'></span>
-            </div>
-          </div>
-        </div>
-            <div class='input-group mb-3'>
-          <input type='text' name='name' class='form-control' placeholder='RECOMENDACION'>
-          <div class='input-group-append'>
-            <div class='input-group-text'>
-              <span class='fas fa-comment-dots'></span>
-            </div>
-          </div>
-        </div>
-          <div class='input-group mb-3'>
-          <input type='text' name='name' class='form-control' placeholder='AÑO APROBADO'>
-          <div class='input-group-append'>
-            <div class='input-group-text'>
-              <span class='fas fa-comment-dots'></span>
-            </div>
-          </div>
-        </div>
-          <div class='input-group mb-3'>
-          <input type='text' name='name' class='form-control' placeholder='CONVALIDACION'>
-          <div class='input-group-append'>
-            <div class='input-group-text'>
-              <span class='fas fa-comment-dots'></span>
-            </div>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-8'>
-            <div class='icheck-primary'>
-    
-            </div>
-          </div>
-        </div>
-      </form>
+                          <div class='input-group mb-3'>
+                          <input type='text'' name='item_id' class='form-control' placeholder='CURSO'>
+                          <div class='input-group-append'>
+                            <div class='input-group-text'>
+                              <span class='fas fa-chalkboard-teacher'></span>
                             </div>
+                          </div>
+
+                        </div>
+                         <div class='input-group mb-3'>
+                          <input type='text' name='item_id' class='form-control' placeholder='CAMBIAR NOMBRE AL CURSO'>
+                          <div class='input-group-append'>
+                            <div class='input-group-text'>
+                              <span class='fas fa-chalkboard-teacher'></span>
+                            </div>
+                          </div>
+                        </div>
+
+                          <div class='input-group mb-3'>
+                            <label>Description: &nbsp; </label>
+                              <textarea rows='4' cols='50' name='description' class='form-control' placeholder='DESCRIPCION' required>
+                              </textarea>
+                          <div class='input-group-append'>
+                            <div class='input-group-text'>
+                              <span class='fa fa-font'></span>
+                            </div>
+                          </div>
+                        </div>
+
+
+                          <div class='input-group mb-3'>
+                          <input type='text' name='item_id' class='form-control' placeholder='NOTA'>
+                          <div class='input-group-append'>
+                            <div class='input-group-text'>
+                              <span class='fas fa-clipboard'></span>
+                            </div>
+                          </div>
+                        </div>
+                          <div class='input-group mb-3'>
+                          <input type='text' name='name' class='form-control' placeholder='MATRICULADO'>
+                          <div class='input-group-append'>
+                            <div class='input-group-text'>
+                              <span class='fas fa-user'></span>
+                            </div>
+                          </div>
+                        </div>
+                            <div class='input-group mb-3'>
+                          <input type='text' name='name' class='form-control' placeholder='RECOMENDACION'>
+                          <div class='input-group-append'>
+                            <div class='input-group-text'>
+                              <span class='fas fa-comment-dots'></span>
+                            </div>
+                          </div>
+                        </div>
+                          <div class='input-group mb-3'>
+                          <input type='text' name='name' class='form-control' placeholder='AÑO APROBADO'>
+                          <div class='input-group-append'>
+                            <div class='input-group-text'>
+                              <span class='fas fa-comment-dots'></span>
+                            </div>
+                          </div>
+                        </div>
+                          <div class='input-group mb-3'>
+                          <input type='text' name='name' class='form-control' placeholder='CONVALIDACION'>
+                          <div class='input-group-append'>
+                            <div class='input-group-text'>
+                              <span class='fas fa-comment-dots'></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='row'>
+                          <div class='col-8'>
+                            <div class='icheck-primary'>
+
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                                            </div>
                             <div class='modal-footer'>
                               <button type='button' class='btn btn-default' data-dismiss='modal'>APPLY</button>
                             </div>
