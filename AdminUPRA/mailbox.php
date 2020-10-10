@@ -141,7 +141,7 @@
         </div>
       </div>
       <!-- Sidebar Menu -->
-      <nav class="mt-2">
+         <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
@@ -152,21 +152,21 @@
             </a>
           </li>
           <li class="nav-item has-treeview menu-open">
-            <a href="studentdata.php" class="nav-link">
+            <a href="estudiantes.php" class="nav-link">
                <i class="fas fa-user-graduate"></i>&nbsp;&nbsp;&nbsp;&nbsp;
               <p>Data Estudiantes</p>
-            </a>
-          </li>
-           <li class="nav-item has-treeview menu-open">
-            <a href="calendar.php" class="nav-link">
-               <i class="far fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-              <p>Calendario</p>
             </a>
           </li>
           <li class="nav-item has-treeview menu-open">
             <a href="lista.html" class="nav-link">
                <i class="fas fa-stopwatch-20"></i>&nbsp;&nbsp;&nbsp;&nbsp;
               <p>Lista de Conteo de Clases</p>
+            </a>
+          </li>
+           <li class="nav-item has-treeview menu-open">
+            <a href="calendar.php" class="nav-link">
+               <i class="far fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+              <p>Calendario</p>
             </a>
           </li>
           <li class="nav-item has-treeview menu-open">

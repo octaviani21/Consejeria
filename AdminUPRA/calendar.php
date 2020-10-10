@@ -154,7 +154,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview menu-open">
-            <a href="studentdata.php" class="nav-link">
+            <a href="estudiantes.php" class="nav-link">
                <i class="fas fa-user-graduate"></i>&nbsp;&nbsp;&nbsp;&nbsp;
               <p>Data Estudiantes</p>
             </a>
