@@ -236,16 +236,118 @@ require 'inc/connection.php';
                     Créditos Recomendado: <b>6</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Año: <b>5</b><br>
+           
+                    </div><br>
                     <div class='btn-group'>
-                    <button href='editest.html' type='button' class='button inicio'>EDITAR</button>
-                    <button href='#' type='button' class='button inicio'>CONVALIDAR</button>
-                    <button href='#' type='button' class='button inicio'>AÑADIR</button>
+                    
+                    <div class='container'>
+                      <!-- Trigger the modal with a button -->
+                      <button style='float: right;' type='button' class='button inicio' data-toggle='modal' data-target='#myModal'>EDITAR</button>
+
+                      <!-- Modal -->
+                      <div class='modal fade' id='myModal' role='dialog'>
+                        <div class='modal-dialog'>
+
+                          <!-- Modal content-->
+                          <div class='modal-content'>
+                            <div class='modal-header'>
+                              <button type='button' class='close' data-dismiss='modal'>&times;</button>
+                            </div>
+                            <div class='modal-body'>
+                              <form action='edtiest.php' method='post'>
+          <div class='input-group mb-3'>
+          <input type='text'' name='item_id' class='form-control' placeholder='CURSO'>
+          <div class='input-group-append'>
+            <div class='input-group-text'>
+              <span class='fas fa-chalkboard-teacher'></span>
+            </div>
+          </div>
+              
+        </div>
+         <div class='input-group mb-3'>
+          <input type='text' name='item_id' class='form-control' placeholder='CAMBIAR NOMBRE AL CURSO'>
+          <div class='input-group-append'>
+            <div class='input-group-text'>
+              <span class='fas fa-chalkboard-teacher'></span>
+            </div>
+          </div>
+        </div>
+          
+          <div class='input-group mb-3'>
+            <label>Description: &nbsp; </label>
+              <textarea rows='4' cols='50' name='description' class='form-control' placeholder='DESCRIPCION' required>
+              </textarea>
+          <div class='input-group-append'>
+            <div class='input-group-text'>
+              <span class='fa fa-font'></span>
+            </div>
+          </div>
+        </div>
+          
+          
+          <div class='input-group mb-3'>
+          <input type='text' name='item_id' class='form-control' placeholder='NOTA'>
+          <div class='input-group-append'>
+            <div class='input-group-text'>
+              <span class='fas fa-clipboard'></span>
+            </div>
+          </div>
+        </div>
+          <div class='input-group mb-3'>
+          <input type='text' name='name' class='form-control' placeholder='MATRICULADO'>
+          <div class='input-group-append'>
+            <div class='input-group-text'>
+              <span class='fas fa-user'></span>
+            </div>
+          </div>
+        </div>
+            <div class='input-group mb-3'>
+          <input type='text' name='name' class='form-control' placeholder='RECOMENDACION'>
+          <div class='input-group-append'>
+            <div class='input-group-text'>
+              <span class='fas fa-comment-dots'></span>
+            </div>
+          </div>
+        </div>
+          <div class='input-group mb-3'>
+          <input type='text' name='name' class='form-control' placeholder='AÑO APROBADO'>
+          <div class='input-group-append'>
+            <div class='input-group-text'>
+              <span class='fas fa-comment-dots'></span>
+            </div>
+          </div>
+        </div>
+          <div class='input-group mb-3'>
+          <input type='text' name='name' class='form-control' placeholder='CONVALIDACION'>
+          <div class='input-group-append'>
+            <div class='input-group-text'>
+              <span class='fas fa-comment-dots'></span>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-8'>
+            <div class='icheck-primary'>
+    
+            </div>
+          </div>
+        </div>
+      </form>
+                            </div>
+                            <div class='modal-footer'>
+                              <button type='button' class='btn btn-default' data-dismiss='modal'>APPLY</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
               </div>";}
                 ?>
               <!-- /.card-header -->
-       
+    
+        
               <div class="card-body"> 
+                <div align = "center"><h3>Cursos de Concentración</h3></div>
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr width="50%" bgcolor="yellow">
@@ -259,417 +361,33 @@ require 'inc/connection.php';
                     <th>Año Aprobó</th>
                     <th>Convalidación</th>
                   </tr>
-                  </thead>
+                  </thead> 
                   <tbody>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>CCOM3001</td>
-                    <td>Programación I</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>CCOM3002</td>
-                    <td>Programación II</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>CCOM3010</td>
-                    <td>Niveles Lógicos</td>
-                    <td>3</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>B62</td>
-                    <td>CCOM3135</td>
-                  </tr>
-                  <tr>
-                    <td>CCOM3015</td>
-                    <td>Computadoras en la Sociedad</td>
-                    <td>3</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>CCOM3020</td>
-                    <td>Matemáticas Discretas</td>
-                    <td>3</td>
-                    <td>C</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>CCOM3025</td>
-                    <td>Int. Sistemas de Computadoras</td>
-                    <td>3</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>CCOM3035</td>
-                    <td>Organización de Comp.</td>
-                    <td>3</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>CCOM3041</td>
-                    <td>Sistemas Operativos</td>
-                    <td>3</td>
-                    <td>C</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>CCOM4005</td>
-                    <td>Estructura de Datos</td>
-                    <td>3</td>
-                    <td>C</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>CCOM4006</td>
-                    <td>Diseño y Análisis de Algoritmo</td>
-                    <td>3</td>
-                    <td>B</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>CCOM4007</td>
-                    <td>Estadística Aplicada a CCOM</td>
-                    <td>3</td>
-                    <td>C</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>MATE3026</td>
-                  </tr>
-                  <tr>
-                    <td>CCOM4025</td>
-                    <td>Org. Lenguajes de Programación</td>
-                    <td>3</td>
-                    <td>B</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>CCOM4065</td>
-                    <td>Algebra Lineal Numérica</td>
-                    <td>3</td>
-                    <td></td>
-                    <td></td>
-                    <td>Prox. Sem</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>CCOM4115</td>
-                    <td>Diseño Base de Datos</td>
-                    <td>3</td>
-                    <td>B</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>CCOM4075</td>
-                    <td>Ingeniería de Software</td>
-                    <td>3</td>
-                    <td></td>
-                    <td>C01-Matriculado</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>CCOM4095</td>
-                    <td>Proyecto Ingeniería de Prog.</td>
-                    <td>3</td>
-                    <td></td>
-                    <td></td>
-                    <td>Prox. Sem</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                    <thead>
-                  <tr width="50%" bgcolor="yellow"> 
-                    <th>Cursos</th>
-                    <th>Descripción</th>
-                    <th>Créditos</th>
-                    <th>Nota</th>
-                    <th>Matriculado</th>
-                    <th>Recomendación</th>
-                    <th>Iniciales</th>
-                    <th>Año Aprobó</th>
-                    <th>Convalidación</th>
-                  </tr>
-                  </thead>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>ESPA3101</td>
-                    <td>Español I</td>
-                    <td>3</td>
-                    <td>C</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>ESPA3102</td>
-                    <td>Español II</td>
-                    <td>3</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>ESPA3208</td>
-                    <td>Redación y Estilo</td>
-                    <td>3</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>INGL3101</td>
-                    <td>Inglés I</td>
-                    <td>3</td>
-                    <td>B</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>INGL3102</td>
-                    <td>Inglés</td>
-                    <td>3</td>
-                    <td>B</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>INGL3015</td>
-                    <td>Inglés Ciencias y Tecnología</td>
-                    <td>3</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>MATE0008</td>
-                    <td>Desarrollo Destrezas Básicas</td>
-                    <td>0</td>
-                    <td>P</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>MATE3171</td>
-                    <td>Precálculo I</td>
-                    <td>3</td>
-                    <td>C</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>MATE3172</td>
-                    <td>Precálculo II</td>
-                    <td>3</td>
-                    <td>C</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>MATE3031</td>
-                    <td>Cálculo I</td>
-                    <td>4</td>
-                    <td></td>
-                    <td>C01-Matriculado</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>HUMA3201</td>
-                    <td>Cultura Occidental III</td>
-                    <td>3</td>
-                    <td>C</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>HIST3242</td>
-                    <td>Historia de Puerto Rico II</td>
-                    <td>3</td>
-                    <td></td>
-                    <td>C01-Matriculado</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>CISO3121</td>
-                    <td>Introducción Ciencias Sociales</td>
-                    <td>3</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>CISO3122</td>
-                    <td>Introducción Ciencias Sociales</td>
-                    <td>C</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>CIBI3001</td>
-                    <td>Int. Ciencias Biológicas I</td>
-                    <td>3</td>
-                    <td>B</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>CIBI3002</td>
-                    <td>Int. Ciencias Biológicas II</td>
-                    <td>3</td>
-                    <td>C</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>FISI3011</td>
-                    <td>Física Universitaria I</td>
-                    <td>3</td>
-                    <td>C</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>FISI3013</td>
-                    <td>Lab Física Universitaria I</td>
-                    <td>1</td>
-                    <td>C</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>FISI3012</td>
-                    <td>Física Universitaria II</td>
-                    <td>3</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>FISI3014</td>
-                    <td>Lab Física Universitaria I</td>
-                    <td>1</td>
-                    <td>B</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
+                <?php 
+                $sql ="SELECT nombre_c, descripción_c, créditos_c, nota_c, estatus_c, año_aprobo_c
+                      FROM expediente WHERE id_rol = 1";
+                    $result = mysqli_query($conn, $sql);
+                    $resultCheck = mysqli_num_rows($result);
+              
+                if($resultCheck > 0){
+                while($row = mysqli_fetch_assoc($result)){
+                  
+                  echo "<tr width='50%' bgcolor='D6D2D2'>
+                    <td>{$row['nombre_c']}</td>
+                    <td>{$row['descripción_c']}</td>
+                    <td>{$row['créditos_c']}</td>
+                    <td>{$row['nota_c']}</td>
+                    <td>{$row['estatus_c']}</td>
+                    <td></td>
+                    <td></td>
+                    <td>{$row['año_aprobo_c']}</td>
+                    <td></td>
+                  </tr> ";}}?>
+                      
+                </tbody> 
+                  </table>
+                  <div align = "center"><h3>Cursos Generales Obligatorios</h3></div>
+                    <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr width="50%" bgcolor="yellow">
                     <th>Cursos</th>
@@ -682,51 +400,32 @@ require 'inc/connection.php';
                     <th>Año Aprobó</th>
                     <th>Convalidación</th>
                   </tr>
-                  </thead>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>EDFI3451</td>
-                    <td></td>
-                    <td>2</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>EDFI3475</td>
-                    <td></td>
-                    <td>2</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
+                  </thead> 
+                  <tbody>
+                <?php 
+                $sql ="SELECT nombre_c, descripción_c, créditos_c, nota_c, estatus_c, año_aprobo_c
+                      FROM expediente WHERE id_rol = 2 OR id_rol = 4";
+                    $result = mysqli_query($conn, $sql);
+                    $resultCheck = mysqli_num_rows($result);
+              
+                if($resultCheck > 0){
+                while($row = mysqli_fetch_assoc($result)){
+                  
+                  echo "<tr width='50%' bgcolor='D6D2D2'>
+                    <td>{$row['nombre_c']}</td>
+                    <td>{$row['descripción_c']}</td>
+                    <td>{$row['créditos_c']}</td>
+                    <td>{$row['nota_c']}</td>
+                    <td>{$row['estatus_c']}</td>
                     <td></td>
                     <td></td>
+                    <td>{$row['año_aprobo_c']}</td>
                     <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>EDFI3025</td>
-                    <td></td>
-                    <td>2</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>CCOM3027</td>
-                    <td></td>
-                    <td>3</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
+                  </tr> ";}}?>
+                </tbody>
+                  </table>
+                   <div align = "center"><h3>Electivas Libres</h3></div>
+                    <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr width="50%" bgcolor="yellow">
                     <th>Cursos</th>
@@ -739,53 +438,68 @@ require 'inc/connection.php';
                     <th>Año Aprobó</th>
                     <th>Convalidación</th>
                   </tr>
-                  </thead>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>CCOM4306</td>
+                  </thead> 
+                <tbody>
+                <?php 
+                $sql ="SELECT nombre_c, descripción_c, créditos_c, nota_c, estatus_c, año_aprobo_c
+                      FROM expediente WHERE id_rol = 3 OR id_rol = 6 OR id_rol = 7 OR id_rol = 8 OR id_rol = 9 OR id_rol = 10";
+                    $result = mysqli_query($conn, $sql);
+                    $resultCheck = mysqli_num_rows($result);
+              
+                if($resultCheck > 0){
+                while($row = mysqli_fetch_assoc($result)){
+                  
+                  echo "<tr width='50%' bgcolor='D6D2D2'>
+                    <td>{$row['nombre_c']}</td>
+                    <td>{$row['descripción_c']}</td>
+                    <td>{$row['créditos_c']}</td>
+                    <td>{$row['nota_c']}</td>
+                    <td>{$row['estatus_c']}</td>
                     <td></td>
-                    <td>3</td>
-                    <td>A</td>
                     <td></td>
+                    <td>{$row['año_aprobo_c']}</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                  </tr> ";}}?>
+                </tbody> 
+                  </table>
+                   <div align = "center"><h3>Electivas Departamentales</h3></div>
+                    <table id="example2" class="table table-bordered table-hover">
+                     <thead>
+                  <tr width="50%" bgcolor="yellow">
+                    <th>Cursos</th>
+                    <th>Descripción</th>
+                    <th>Créditos</th>
+                    <th>Nota</th>
+                    <th>Matriculado</th>
+                    <th>Recomendación</th>
+                    <th>Iniciales</th>
+                    <th>Año Aprobó</th>
+                    <th>Convalidación</th>
                   </tr>
-                  <tr>
-                    <td>CCOM4305</td>
-                    <td></td>
-                    <td>4</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr width="50%" bgcolor="D6D2D2">
-                    <td>CCOM4307</td>
-                    <td>Avanzada</td>
-                    <td>4</td>
-                    <td>A</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                  </thead> 
+                <tbody>
+                <?php 
+                $sql ="SELECT nombre_c, descripción_c, créditos_c, nota_c, estatus_c, año_aprobo_c
+                      FROM expediente WHERE id_rol = 11 OR id_rol = 12 OR id_rol = 13 ";
+                    $result = mysqli_query($conn, $sql);
+                    $resultCheck = mysqli_num_rows($result);
+              
+                if($resultCheck > 0){
+                while($row = mysqli_fetch_assoc($result)){
+                  
+                  echo "<tr width='50%' bgcolor='D6D2D2'>
+                    <td>{$row['nombre_c']}</td>
+                    <td>{$row['descripción_c']}</td>
+                    <td>{$row['créditos_c']}</td>
+                    <td>{$row['nota_c']}</td>
+                    <td>{$row['estatus_c']}</td>
                     <td></td>
                     <td></td>
-                  </tr>
-                  <tr>
-                    <td>CCOM4019</td>
-                    <td>Avanzada</td>
-                    <td>3</td>
-                    <td>A</td>
+                    <td>{$row['año_aprobo_c']}</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  </tbody>
-                </table>
+                  </tr> ";}}?>
+
+                    </table>
                   <b align="right"> Total de Creditos Electivas Departamentales: 14</b>
                   
               </div>
