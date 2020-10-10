@@ -60,6 +60,8 @@
                 </div>
                 
             </div>
+            
+           <a href="pdf.php"><h2>Descargar Expediente Academico PDF</h2></a><br>
 
             <div class="container tables">
                 
